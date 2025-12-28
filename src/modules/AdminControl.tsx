@@ -7,7 +7,7 @@ const AdminControl = () => {
   const [isOk, setIsOk] = useState<boolean | null>(null);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("password");
     setIsOk(!!token);
   }, []);
 
